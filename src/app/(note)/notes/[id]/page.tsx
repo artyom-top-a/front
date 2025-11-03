@@ -71,9 +71,6 @@ const NotesPage = () => {
   const [content, setContent] = useState<JSONContent>(defaultValue);
 
   const [loading, setLoading] = useState(true);
-  // const [isGeneratingPDF, setIsGeneratingPDF] = useState(false);
-  // const [isSaving, setIsSaving] = useState(false);
-  // const [generatingFlashcards, setGeneratingFlashcards] = useState(false);
 
   const [isEditable, setIsEditable] = useState(false);
 

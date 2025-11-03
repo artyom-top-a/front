@@ -7,7 +7,7 @@ import CTA from "@/components/landing/cta";
 
 interface Post {
     title: string;
-    body: PortableTextBlock[]; // Use PortableTextBlock for the body type
+    body: PortableTextBlock[]; 
     mainImage?: {
         asset: {
             url: string;

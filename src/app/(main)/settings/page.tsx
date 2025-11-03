@@ -31,13 +31,6 @@ const SettingsPage = () => {
 
   const { session } = useCurrentUser();
 
-  // const { session, status } = useCurrentUser();
-
-  // const router = useRouter();
-
-  // const [name, setName] = useState("");
-  // const [email, setEmail] = useState("");
-  // const [isChanged, setIsChanged] = useState(false);
   const [emailConfirmation, setEmailConfirmation] = useState("");
   const [loading, setLoading] = useState(false);
 

@@ -1,6 +1,5 @@
 "use server"
 
-// app/actions/notes.ts
 import { client } from '@/lib/prisma';
 import { auth } from '../../../auth';
 

@@ -143,31 +143,6 @@ const DeckPracticePage = () => {
     }
   }, [isAnimating, currentCard, currentIndex, currentBatch.length]);
 
-  // // Updated handleNotRemember with animation direction
-  // const handleNotRemember = useCallback(() => {
-  //   if (isAnimating || !currentCard) return;
-
-  //   setAnimationDirection("left"); // Set animation direction to left
-
-  //   setFlashcards((prevFlashcards) =>
-  //     prevFlashcards.map((card) =>
-  //       card.id === currentCard.id
-  //         ? {
-  //           ...card,
-  //           remembered: false,
-  //           score: card.score - 1,
-  //         }
-  //         : card
-  //     )
-  //   );
-
-  //   if (currentIndex === currentBatch.length - 1) {
-  //     setShowSummary(true);
-  //   } else {
-  //     handleNext();
-  //   }
-  // }, [isAnimating, currentCard, currentIndex, currentBatch.length]);
-
   const handleNotRemember = useCallback(() => {
     if (isAnimating || !currentCard) return;
 
@@ -275,9 +250,6 @@ const DeckPracticePage = () => {
       toast({
         title: "Deck Shared Successfully",
         description: "Your deck is now public. The share link has been copied to your clipboard!",
-        // action: (
-        //   <ToastAction altText="Close">Close</ToastAction>
-        // ),
       })
     } catch (error) {
       console.error("Error making note public:", error);

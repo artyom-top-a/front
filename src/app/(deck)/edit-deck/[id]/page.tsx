@@ -79,7 +79,6 @@ const CreateDeckPage = () => {
     }
   };
 
-  // Resize the textareas whenever the selectedCard changes (e.g., on load or when switching cards)
   useEffect(() => {
     resizeTextarea(questionTextareaRef);
     resizeTextarea(answerTextareaRef);
@@ -230,7 +229,6 @@ const CreateDeckPage = () => {
         >
           <path d="M21 12a9 9 0 1 1-6.219-8.56" />
         </svg>
-        {/* <div>Loading...</div> */}
       </div>
     );
   }
@@ -272,16 +270,6 @@ const CreateDeckPage = () => {
           className='text-primary border-none text-[15px] font-semibold ml-2'
         />
 
-        {/* <Button
-          className="z-50 text-sm h-10 px-5 bg-[#F3F3F3] dark:bg-accent border text-black/70 dark:text-white rounded-md hover:bg-gray-300 dark:hover:bg-zinc-900/80 transition"
-          onClick={handleDeleteFlashcard}
-        >
-
-
-          Cancel
-
-        </Button> */}
-
         <Button
           className="z-50 text-sm h-10 font-semibold px-5 bg-gray-50 dark:bg-accent border text-black/70 dark:text-white rounded-md hover:bg-gray-100 dark:hover:bg-zinc-900/80 transition"
           onClick={() => router.push(`/practice/${deckId}`)}
@@ -297,7 +285,6 @@ const CreateDeckPage = () => {
         </Button>
 
         <Button onClick={handleExportToAnki} className="ml-3 z-50 text-sm transition h-10 font-bold text-[#6127FF] bg-[#6127FF]/10 hover:bg-[#6127FF]/20 border border-[#6127FF]/15 px-6 rounded-lg">
-          {/* <Play className='size-5 mr-2' /> */}
           Export to Anki
         </Button>
 
